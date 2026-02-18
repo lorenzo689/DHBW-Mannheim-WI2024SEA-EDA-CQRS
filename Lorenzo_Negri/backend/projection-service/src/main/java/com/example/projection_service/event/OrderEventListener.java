@@ -18,7 +18,7 @@ public class OrderEventListener {
         this.orderService = orderService;
     }
 
-    @RabbitListener(queues = RabbitMQConfig.ORDER_QUEUE, messageConverter = "jsonMessageConverter")
+    @RabbitListener(queues = RabbitMQConfig.ORDER_QUEUE, containerFactory = "rabbitListenerContainerFactory")
     public void handleOrderPlaced(OrderPlacedEvent event) {
         logger.info("Received OrderPlaced event: {}", event.getEventType());
         
