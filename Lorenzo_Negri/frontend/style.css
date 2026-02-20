@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins; 
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     background-color: #f8fafc;
     color: #1e293b;
     line-height: 1.6;
@@ -192,7 +192,6 @@ input::placeholder {
 .order-id {
     font-size: 0.75rem;
     color: #64748b;
-    font-family: monospace;
 }
 
 .order-product {
@@ -260,7 +259,6 @@ footer p {
 }
 
 .endpoint {
-    font-family: monospace;
     background: #ffffff;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
